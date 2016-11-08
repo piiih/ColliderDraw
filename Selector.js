@@ -1,6 +1,0 @@
-class Selector
-{
-	constructor(rectangle){
-
-	}
-}
