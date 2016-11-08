@@ -20,6 +20,13 @@ class Printer
 	getCanvas(){
 		return this.canvas;
 	}
+    getId(){
+        return this.canvas.id
+    }
+    drawText(){
+        this.context.font = "20px Georgia"
+        this.context.fillText("Hello", 10, 50)
+    }
 
 	printPolygon(polygon, reset = false, displayStyle = 'fill'){
 		if(reset){
