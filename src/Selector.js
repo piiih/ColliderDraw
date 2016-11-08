@@ -1,0 +1,6 @@
+class Selector
+{
+	constructor(rectangle){
+
+	}
+}
