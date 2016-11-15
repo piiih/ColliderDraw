@@ -25,7 +25,7 @@ class Printer
     }
     drawText(){
         this.context.font = "20px Georgia"
-        this.context.fillText("Hello", 10, 50)
+        this.context.fillText("teste", 10, 50)
     }
 
 	printPolygon(polygon, reset = false, displayStyle = 'fill'){
