@@ -48,15 +48,19 @@ mouse.onLeftUp(function(){
 }, printers['select'])
 
 keyboard.onKeyPressed("s", function(event){
-    printersManager.bringToTop(printers['select'])
+    printersManager.bringToTop(printers['select']) 
+    printersManager.getPrinters()['text'].resetCanvas()
+    printersManager.getPrinters()['text'].drawText('Select');
     //console.log('select activated!')
 })
+
 keyboard.onKeyPressed("d", function(event){
     printersManager.bringToTop(printers['draw'])
+    printersManager.getPrinters()['text'].resetCanvas()
+    printersManager.getPrinters()['text'].drawText('Draw/Edit');
     //console.log('draw activated!')
 })
 
-printersManager.getPrinters()['text'].drawText();
 
 
 mouse.onLeftDown(function(event){
@@ -74,6 +78,7 @@ mouse.onLeftDown(function(event){
 
 mouse.onLeftHold(function(event){
     var polygonPoints = polygon.getPoints();
+    console.log(printersManager.currentPrinter)
     polygonPoints.forEach(function(polygonPoint, key){
         if(polygonPoint.selected){
             polygonPoints[key].setX(mouse.getPosition().x)

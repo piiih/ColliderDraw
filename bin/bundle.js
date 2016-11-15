@@ -291,7 +291,7 @@
 			key: "drawText",
 			value: function drawText() {
 				this.context.font = "20px Georgia";
-				this.context.fillText("Ted", 10, 50);
+				this.context.fillText("teste", 10, 50);
 			}
 		}, {
 			key: "printPolygon",
