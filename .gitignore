@@ -5,6 +5,7 @@
 /benchmark/fixtures
 /examples/*/js
 /coverage
+/bin/bundle.js
 .DS_Store
 *.log
 .idea
